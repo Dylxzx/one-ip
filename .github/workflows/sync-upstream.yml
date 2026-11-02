@@ -20,6 +20,7 @@ jobs:
     permissions:
       contents: write
       actions: write
+      workflows: write  # <-- 添加这一行
     env:
       GH_TOKEN: ${{ github.token }}
       REPO: ${{ github.repository }}
